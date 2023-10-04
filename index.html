@@ -20,23 +20,42 @@
   <link rel="apple-touch-icon" sizes="180x180" href="">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
   <main>
     <section class="mv">
       <ul class="fade">
-        <li><img src="img/mv1.png" alt=""></li>
-        <li><img src="img/mv2.png" alt=""></li>
-        <li><img src="img/mv3.png" alt=""></li>
+        <li>
+          <figure>
+            <picture>
+              <source media="(max-width:767px)" srcset="img/mv-sp1.png 1x, img/mv1-sp@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/mv1.png 1x, img/mv1-2x.png 2x">
+              <img src="">
+            </picture>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <picture>
+              <source media="(max-width:767px)" srcset="img/mv-sp2.png 1x, img/mv2-sp@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/mv2.png 1x, img/mv2-2x.png 2x">
+              <img src="">
+            </picture>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <picture>
+              <source media="(max-width:767px)" srcset="img/mv-sp3.png 1x, img/mv3-sp@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/mv3.png 1x, img/mv3-2x.png 2x">
+              <img src="">
+            </picture>
+          </figure>
+        </li>
       </ul>
-      <!-- <figure>
-        <picture>
-          <source media="(max-width:767px)" srcset="img/sp.jpg 1x, img/sp@2x.jpg 2x">
-          <source media="(min-width:768px)" srcset="img/pc.jpg 1x, img/pc@2x.jpg 2x">
-          <img src="">
-        </picture>
-      </figure> -->
       <div class="bee first-bee">
         <img src="img/icon-honey1.png" alt="">
       </div>
@@ -47,29 +66,27 @@
         <a href="index.html"><img src="img/logo.png" alt="HONEY MIX"></a>
       </h1>
       <span class="cursive">Original Honey Brand</span>
-      <span>Since&nbsp;1978</span>
+      <span class="since">Since&nbsp;1978</span>
       <div class="flower">
         <img src="img/icon-flower.png" alt="">
       </div>
     </section>
     <section class="product">
       <div class="product__inner">
-        <div>
+        <div class="product__bee">
           <img src="img/icon-honey1.png" alt="">
         </div>
-        <div>
+        <div class="product__leaf-first">
           <img src="img/icon-leaf1.png" alt="">
         </div>
         <div class="product__content">
-          <h2 class="section-title" data-en="product">
-            商品について
-          </h2>
-          <p>商品は下記の2種類でご用意しております。</p>
+          <h2 class="section-title" data-en="product">商品について</h2>
+          <p class="product__guidance">商品は下記の2種類でご用意しております。</p>
           <div class="product__box">
             <div class="product__text">
-              <h3>商品名タイトル</h3>
-              <p>商品説明テキスト商品説明テキスト商品説明テキスト商品説明テキスト商品説明テキスト</p>
-              <p>内容量:350ml<br>値段:999円</p>
+              <h3 class="product__title">商品名タイトル</h3>
+              <p class="product__description">商品説明テキスト商品説明テキスト商品説明テキスト商品説明テキスト商品説明テキスト</p>
+              <p class="product__price">内容量:350ml<br>値段:999円</p>
             </div>
             <div class="product__img">
               <img src="img/product1.png" alt="">
@@ -77,64 +94,101 @@
           </div>
           <div class="product__box">
             <div class="product__text">
-              <h3>商品名タイトル</h3>
-              <p>商品説明テキスト商品説明テキスト商品説明テキスト商品説明テキスト商品説明テキスト</p>
-              <p>内容量:350ml<br>値段:999円</p>
+              <h3 class="product__title">商品名タイトル</h3>
+              <p class="product__description">商品説明テキスト商品説明テキスト商品説明テキスト商品説明テキスト商品説明テキスト</p>
+              <p class="product__price">内容量:350ml<br>値段:999円</p>
             </div>
             <div class="product__img">
               <img src="img/product2.png" alt="">
             </div>
           </div>
-          <p>※商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト</p>
+          <p class="product__attention">※商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト</p>
         </div>
-        <div>
+        <div class="product__leaf-second">
           <img src="img/icon-leaf2.png" alt="">
         </div>
       </div>
     </section>
     <section class="recommend">
+      <div class="rainbow">
+        <img src="img/icon-rainbow.png" alt="">
+      </div>
       <div class="recommend__inner">
-        <div>
+        <div class="bee recommend__bee">
           <img src="img/icon-honey2.png" alt="">
         </div>
         <h2 class="section-title" data-en="recommendation">
           いろいろな食べ方
         </h2>
-        <ul>
-          <li>
-            <div>
+        <ul class="recommend__box">
+          <li class="recommend__item">
+            <div class="recommend__img">
               <img src="img/eat-1.png" alt="">
             </div>
-            <h3>そのまま食べる</h3>
-            <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+            <h3 class="recommend__title">そのまま食べる</h3>
+            <p class="recommend__text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
           </li>
-          <li>
-            <div>
+          <li class="recommend__item">
+            <div class="recommend__img">
               <img src="img/eat-2.png" alt="">
             </div>
-            <h3>パンケーキやアイスと一緒に</h3>
-            <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+            <h3 class="recommend__title">パンケーキやアイスと一緒に</h3>
+            <p class="recommend__text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
           </li>
-          <li>
-            <div>
+          <li class="recommend__item">
+            <div class="recommend__img">
               <img src="img/eat-3.png" alt="">
             </div>
-            <h3>フルーツにかけてもOK</h3>
-            <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+            <h3 class="recommend__title">フルーツにかけてもOK</h3>
+            <p class="recommend__text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
           </li>
-          <li>
-            <div>
+          <li class="recommend__item">
+            <div class="recommend__img">
               <img src="img/eat-4.png" alt="">
             </div>
-            <h3>ドリンクにいれて飲む</h3>
-            <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+            <h3 class="recommend__title">ドリンクにいれて飲む</h3>
+            <p class="recommend__text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
           </li>
         </ul>
+        <!-- <div class="swiper sample-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img src="img/eat-1.png" alt="">
+              </div>
+              <h3>そのまま食べる</h3>
+              <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="img/eat-2.png" alt="">
+              </div>
+              <h3>パンケーキやアイスと一緒に</h3>
+              <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="img/eat-3.png" alt="">
+              </div>
+              <h3>フルーツにかけてもOK</h3>
+              <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="img/eat-4.png" alt="">
+              </div>
+              <h3>ドリンクにいれて飲む</h3>
+              <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+            </div>
+          </div>
+        </div>  --> 
       </div>
     </section>
-    <div class="wave">
-      <img src="img/bg-img@2x.png" alt="">
-      <p>HONEY MIXのはちみつは、「国産の生ハチミツ」だけにこだわっています。<br>ここにはちみつの説明テキストが入ります。<br>ここにはちみつの説明テキストが入ります。ここにはちみつの説明テキストが入ります。<br>はちみつの説明テキストが入ります。<br>はちみつの説明テキストが入りますはちみつの説明テキストが入ります。</p>
+    <div class="wave-box">
+      <div class="wave">
+        <img src="img/bg-img@2x.png" alt="">
+        <p>HONEY MIXのはちみつは、「国産の生ハチミツ」だけにこだわっています。<br>ここにはちみつの説明テキストが入ります。<br>ここにはちみつの説明テキストが入ります。ここにはちみつの説明テキストが入ります。<br>はちみつの説明テキストが入ります。<br>はちみつの説明テキストが入りますはちみつの説明テキストが入ります。</p>
+      </div>
     </div>
     <section class="process">
       <div class="process__inner">
