@@ -38,6 +38,21 @@ li{
   height: 158px;
 }
 
+.section-title{
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+.section-title::after{
+  content: attr(data-en);
+  display: block;
+  font-size: 0.6875rem;
+}
+
+
 
 /* MV */
 
@@ -159,7 +174,7 @@ li{
 }
 
 .product__bee{
-  text-align: center;
+  margin: 0 auto;
 }
 
 .product__leaf-first{
@@ -177,21 +192,7 @@ li{
 .product__content{
   width: 720px;
   margin: 0 auto;
-  padding-top: 32px;
   padding-bottom: 122px;
-}
-
-.section-title{
-  margin: 0 auto;
-  text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
-}
-
-.section-title::after{
-  content: attr(data-en);
-  display: block;
-  font-size: 0.6875rem;
 }
 
 .product__guidance{
@@ -331,3 +332,223 @@ li{
 
 /* WAVE */
 
+.divide{
+  position: relative;
+  margin-top: 135px;
+}
+
+.custom-shape-divider-top-1696572903 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1696572903 svg {
+  position: relative;
+  display: block;
+  width: calc(147% + 1.3px);
+  height: 173px;
+}
+
+.custom-shape-divider-top-1696572903 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.divider {
+  position: relative;
+  margin-bottom: 135px;
+}
+
+.custom-shape-divider-bottom-1696572568 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696572568 svg {
+  position: relative;
+  display: block;
+  width: calc(147% + 1.3px);
+  height: 173px;
+}
+
+.custom-shape-divider-bottom-1696572568 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.wave-box{
+  background-image: url(../img/bg-img@2x.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.wave-text{
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 2.8;
+  padding-left: 83px;
+  padding-top: 452px;
+}
+
+
+/* PROCESS */
+
+.process__bee{
+  margin: 0 auto;
+}
+
+.process__box{
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.process__item{
+  display: flex;
+}
+
+.process__text{
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.process__title{
+  font-size: 1.0625rem;
+}
+
+.process__description{
+  margin-top: 10px;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.process__img{
+  width: 50%;
+}
+
+.first-stage .process__img{
+  order: 1;
+}
+
+.first-stage .process__text{
+  order: 2;
+}
+
+.third-stage .process__img{
+  order: 1;
+}
+
+.third-stage .process__text{
+  order: 2;
+}
+
+
+/* CONTACT */
+
+.contact{
+  margin-top: 120px;
+}
+
+.contact__bee{
+  margin: 0 auto;
+}
+
+
+.contact__text{
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.contact__guidance{
+  margin-top: 50px;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+.contact__number{
+  margin-top: 40px;
+  line-height: 2;
+}
+
+/* FOOTER */
+
+.footer{
+  margin-top: 180px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-color: #F1FBFF;
+  position: relative;
+}
+
+.footer__leaf{
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.footer__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__left{
+  margin-right: 32.5px;
+}
+
+.btn{
+  display: inline-block;
+  width: 256px;
+  max-width: 100%;
+  padding: 12px 10px;
+  background-color: #333;
+  border: 2px solid transparent;
+  color: #fff;
+  font-size: 0.8125rem;
+  text-align: center;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.btn:focus, .btn:hover{
+  background-color: #fff;
+  border-color: currentColor;
+  color: #333;
+}
+
+.footer__right{
+  margin-left: 32.5px;
+}
+
+.footer__site-title{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer__address{
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-top: 10px;
+  line-height: 2;
+}
+
+.copyright{
+  margin-top: 65px;
+  text-align: center;
+  font-size: 0.625rem;
+}
