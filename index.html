@@ -20,11 +20,20 @@
   <link rel="apple-touch-icon" sizes="180x180" href="">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  " rel="stylesheet">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <!-- ローディング画面 -->
+  <div id="loading">
+    <div class="loading-img">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div id="loading-screen"></div>
+  </div>
   <main>
     <section class="mv">
       <ul class="fade">
@@ -150,38 +159,40 @@
             <p class="recommend__text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
           </li>
         </ul>
-        <!-- <div class="swiper sample-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div>
-                <img src="img/eat-1.png" alt="">
-              </div>
-              <h3>そのまま食べる</h3>
-              <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <img src="img/eat-2.png" alt="">
-              </div>
-              <h3>パンケーキやアイスと一緒に</h3>
-              <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <img src="img/eat-3.png" alt="">
-              </div>
-              <h3>フルーツにかけてもOK</h3>
-              <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <img src="img/eat-4.png" alt="">
-              </div>
-              <h3>ドリンクにいれて飲む</h3>
-              <p>商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
-            </div>
+        <div class="splide" role="group" aria-label="">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide-img">
+                  <img src="img/eat-1.png" alt="">
+                </div>
+                <h3 class="splide-title">そのまま食べる</h3>
+                <p class="splide-text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+              </li>
+              <li class="splide__slide">
+                <div class="splide-img">
+                  <img src="img/eat-2.png" alt="">
+                </div>
+                <h3 class="splide-title">パンケーキやアイスと一緒に</h3>
+                <p class="splide-text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+              </li>
+              <li class="splide__slide">
+                <div class="splide-img">
+                  <img src="img/eat-3.png" alt="">
+                </div>
+                <h3 class="splide-title">フルーツにかけてもOK</h3>
+                <p class="splide-text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+              </li>
+              <li class="splide__slide">
+                <div class="splide-img">
+                  <img src="img/eat-4.png" alt="">
+                </div>
+                <h3 class="splide-title">ドリンクにいれて飲む</h3>
+                <p class="splide-text">商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。商品注意事項テキスト商品注意事項テキスト商品注意事項テキスト。</p>
+              </li>
+            </ul>
           </div>
-        </div>  --> 
+        </div>
       </div>
     </section>
     <div class="divide">
