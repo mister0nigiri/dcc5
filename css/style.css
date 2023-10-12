@@ -607,42 +607,44 @@ LOADING
 /*-------------------------------------------
 SP
 -------------------------------------------*/
-@media screen and (max-width: 767px) {
 
-  .bee{
-    width: 117px;
-    height: 93px;
+@media screen and (max-width: 1210px) {
+  /* RECOMMEND */
 
+  .recommend{
+    padding-bottom: 600px;
   }
-    /* MV */
-
-  .mv{
-    padding-top: 250px;
+  .recommend__inner{
+    width: auto;
+    top: 200px;
   }
-  .mv .fade li img {
-    height: 250px;
+  .recommend::before {   
+    transform: skewY(-15deg) translateY(150px);
   }
-  .first-bee{
-    top: 236px;
-    left: 21.3%;
-  }
-  .second-bee{
-    top: 272px;
-    right: 13.6%;
-  }
-  .logo-img{
-    width: 195px;
-    height: 157px;
-    margin-top: 125px;
-  }
-  .cursive{
-    margin-top: 30px;
-    font-size: 2rem;
-  }
-  .flower{
-    margin-top: 20px;
+  .recommend__box{
+    display: none;
   }
 
+  .splide{
+    display: block;
+  }
+  .splide__track{
+    margin-top: 100px;
+  }
+  .splide-title{
+    margin-top: 15px;
+    font-size: 1.0625rem;
+    font-weight: bold;
+  }
+  .splide-text{
+    margin-top: 15px;
+    font-size: 0.8125rem;
+    font-weight: normal;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 1130px) {
   /* PRODUCT */
 
   .product{
@@ -711,43 +713,49 @@ SP
   .product__box:last-of-type .product__text{
     order: 2;
   }
+}
+@media screen and (max-width: 767px) {
+
+  .bee{
+    width: 117px;
+    height: 93px;
+
+  }
+    /* MV */
+
+  .mv{
+    padding-top: 250px;
+  }
+  .mv .fade li img {
+    height: 250px;
+  }
+  .first-bee{
+    top: 236px;
+    left: 21.3%;
+  }
+  .second-bee{
+    top: 272px;
+    right: 13.6%;
+  }
+  .logo-img{
+    width: 195px;
+    height: 157px;
+    margin-top: 125px;
+  }
+  .cursive{
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  .flower{
+    margin-top: 20px;
+  }
 
   /* RECOMMEND */
 
-  .recommend{
-    padding-bottom: 600px;
-  }
-  .recommend__inner{
-    width: auto;
-    top: 200px;
-  }
-  .recommend::before {   
-    transform: skewY(-15deg) translateY(150px);
-  }
-  .recommend__box{
-    display: none;
-  }
-
-  .splide{
-    display: block;
-  }
   .splide__track{
     margin-top: 25px;
   }
-  .splide-title{
-    margin-top: 15px;
-    font-size: 1.0625rem;
-    font-weight: bold;
-  }
-  .splide-text{
-    margin-top: 15px;
-    font-size: 0.8125rem;
-    font-weight: normal;
-    line-height: 1.6;
-  }
-
   
-
   /* WAVE */
 
   .divide{
