@@ -3,7 +3,6 @@
 html{
   font-size: 100%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body{
@@ -193,9 +192,14 @@ LOADING
 }
 
 .flower{
-  width: 1920px;
-  margin: 0 auto;
   margin-top: 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.flower img{
+  width: 1920px;
+  height: 280px;
 }
 
 /* PRODUCT */
@@ -543,8 +547,14 @@ LOADING
   top: -40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
   text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.footer__leaf img{
+  width: 1945px;
+  height: 117px;
 }
 
 .footer__box{
@@ -839,7 +849,10 @@ SP
   }
   .footer__leaf{
     top: -30px;
-    width: 900px;
+  }
+  .footer__leaf img{
+    width: 770px;
+    height: 46px;
   }
   .footer__box{
     flex-direction: column;
